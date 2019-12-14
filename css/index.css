@@ -259,16 +259,17 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+  background-color: #f4f4f4;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h1 {
   font-size: 4rem;
@@ -289,7 +290,7 @@ p {
   margin: 2.5% auto;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -299,8 +300,8 @@ footer {
   text-align: center;
 }
 footer p {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 .home .intro {
   margin-top: 5%;
@@ -372,7 +373,7 @@ footer p {
   display: inline-block;
   font-size: 2rem;
   cursor: pointer;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   border-radius: 8px;
   margin: 4px 2px;
   padding: 10px 24px;
@@ -380,4 +381,9 @@ footer p {
 .home .walk .button:hover {
   background-color: dodgerblue;
   color: orange;
+}
+@media @media(max-width: 500px) {
+  .home .walk .button body {
+    background: red;
+  }
 }
