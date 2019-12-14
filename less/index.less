@@ -49,12 +49,6 @@ h3 {
     font-size: 2.8rem;
 }
 
-a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: black;
-}
-
 p {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -74,7 +68,7 @@ footer {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    .center-text()
 }
 
 footer p {
@@ -82,9 +76,6 @@ footer p {
     color: #23293B;
 }
 
-.home h1 {
-    margin-bottom: 3%;
-}
 
 .home .intro {
     margin-top: 5%;
@@ -149,10 +140,6 @@ footer p {
     margin-left: 4%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
 
 .home .walk .walk-img img {
     width: 100%;
@@ -160,21 +147,6 @@ footer p {
     border-radius: 10px;
 }
 
-.links {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Russo One', sans-serif;
-    color: #23293B;
-}
-
-
-.name {
-    margin-top: 5%;
-    font-size: 4rem;
-    text-align: center;
-}
 
 .home .visit-planets {
     padding: 15px;
@@ -188,17 +160,20 @@ footer p {
     margin-top: 13px;
 }
 
-.home .walk .btn {
+
+.home .walk .button {
     background-color: black;
     border: none;
     color: white;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 2rem;
-    margin: 4px 2px;
-    padding: 10px 24px;
     cursor: pointer;
     font-family: 'Russo One', sans-serif;
     border-radius: 8px;
+    .custom-button(4px 2px, 10px 24px);
+
+    &:hover {
+        background-color: dodgerblue;
+        color: orange;
+    }
 }
