@@ -23,4 +23,137 @@
 @btn-bg-color: #22283A;
 @border-real: #dee2e6;
 
+
 // Mobile var
+
+
+/* Walk Section Media Query for 500px */
+
+@phone: ~"only screen and (max-width:500px)";
+
+@media @phone {
+
+
+  /* ===========  NAVIGATION CODE =============  */
+
+
+  .container {
+    width: 95%;
+  }
+
+  .home,
+  .links a {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+
+
+  /* ========== HEADER CODE =================  */
+
+
+  .main-header-img {
+    width: 100%;
+  }
+
+  .intro h2 {
+    margin-top: -2.5%;
+  }
+
+  .intro p {
+    font-size: 1.5rem;
+  }
+
+  /* ========== SPACE IMAGE ========== */
+
+  .home .space-images .blast {
+    width: 93%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+  .space-images img:not(:first-child) {
+    display: none;
+  }
+
+
+  /* ========== VISIT PLANETS CODE ===========  */
+
+
+  .visit-planets {
+    margin-top: 5%;
+  }
+
+  .visit-planets p {
+    font-size: 1.5rem;
+  }
+
+
+  /* ========== BOTTOM CONTAINER CODE ==========  */
+
+
+  // section is required for specificity
+  .bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .space-walk {
+    width: 93%;
+    max-width: 400px;
+  }
+
+  .for-walk {
+    margin-top: 40%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+
+  .for-walk p {
+    font-size: 1.25rem;
+  }
+
+  /* ========== BUTTON CODE =================  */
+
+
+  // section is required for specificity
+  div.button {
+    background-color: @backColorBlk;
+    color: @fontColorWte;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: "Russo One", sans-serif;
+    .border-radius(6px);
+    max-width: 800px;
+    width: 95%;
+    padding: 40px 0;
+    text-align: center;
+    height: 60px;
+  
+    &:hover {
+      .custom-border(2px, solid, orange);
+      background-color: @backColorWte;
+      color: rgb(85, 156, 228);
+    }
+  }
+
+  /* ========== FOOTER CODE =================  */
+
+  footer {
+    color: #22283b;
+    background: #f4f4f4;
+    padding: 20px 0;
+    .custom-border(1px, solid, lightgray);
+    .border-radius(10px);
+    .center-text();
+    width: 90%;
+    max-width: 800px;
+    height: 10%;
+  }
+
+  footer p {
+    font-family: "Russo One", sans-serif;
+    color: @fontColor93b;
+  }
+}
