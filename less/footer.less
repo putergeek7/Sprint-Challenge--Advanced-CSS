@@ -1,11 +1,22 @@
 // Footer Styles
-footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
+  /* ========== FOOTER CODE =================  */
+
+  footer {
+    color: #22283b;
+    background: #f4f4f4;
+    padding: 20px 0;
+    .custom-border(1px, solid, lightgray);
+    .border-radius(10px);
+    .center-text();
+    margin-top: 2%;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  footer p {
+    font-family: 'Ubuntu', sans-serif;
+    color: @fontColor93b;
+  }

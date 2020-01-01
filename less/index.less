@@ -1,12 +1,88 @@
 // Import your less files here:
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "navigation";
+@import "footer";
+@import "home-page";
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #dee2e6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: @fontColor93b;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* CODE BELOW    */
 
 
+/* ========== HEADER CODE =================  */
 
+.intro {
+  margin-top: 2%;
+}
 
+.intro img {
+  .border-radius(5px);
+  width: 100%;
+}
 
+.intro h2 {
+  padding: 15px;
+}
 
+.intro p {
+  color: #5E6164;
+  padding: 0 15px;
+}
 
+.space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  height: 100%;
+  .border-radius(20px);
+}
 
-
-
-
+.space-images {
+  .flex--wrap();
+  width: 100%;
+}

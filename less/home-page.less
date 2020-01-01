@@ -2,74 +2,82 @@
 
 .home {
 
-  .intro {
+  /* ========  VISIT PLANETS CODE ======= */
 
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
 
   .visit-planets {
-    padding: 15px;
+    padding: 0px 12px;
+  }
 
-    h3 {
-      margin-top: 11px;
-    }
+  .visit-planets h3 {
+    margin-top: 8px;
+  }
 
-    p {
-      margin-top: 13px;
+  .visit-planets p {
+    margin-top: 13px;
+    color: #5E6164;
+  }
+
+
+
+  /* ========== BOTTOM CONTAINER CODE =================  */
+
+
+  .bottom-container {
+    .flex--direction();
+    margin-top: 2.5%;
+    .custom-border(1px, solid, lightgray);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .for-walk {
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+
+  .for-walk p {
+    // display: inline-block;
+    margin-top: 13px;
+    padding-right: 20%;
+    color: #5E6164;
+    line-height: 125%;
+    font-size: 16px;
+  }
+
+  .space-walk {
+    max-width: 800px;
+    width: 93%;
+    .border-radius(10px);
+    margin-top: 4.5%;
+    margin-right: 3.5%;
+  }
+
+
+  /* ========== BUTTON CODE =================  */
+
+
+  .button {
+    background-color: @backColorBlk;
+    color: @fontColorWte;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-left: 1.8%;
+    cursor: pointer;
+    .border-radius(8px);
+    padding: 15px 24px;
+    vertical-align: middle;
+    padding-bottom: 2.5%;
+
+    &:hover {
+      .custom-border(2px, solid, orange);
+      background-color: @backColorWte;
+      color: rgb(85, 156, 228);
     }
   }
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+}
 
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+// home

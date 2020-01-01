@@ -1,1 +1,45 @@
 // Mixins Here
+
+
+.center-text() {
+    text-align: center;
+}
+
+// Mixin created to aid styling
+.flex--center() {
+    display: flex;
+    justify-content: center;
+}
+
+// Mixin created to aid styling
+.flex--direction() {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.flex--wrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//Parametric Mixin for button and other items
+.custom-border(@border-width, @border-style, @border-color) {
+    border-width: @border-width;
+    border-style: @border-style;
+    border-color: @border-color;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+  
+
+@fontColor93b: #23293b;
+@fontColorBlk: black;
+@fontColorWte: white;
+@backColorBlk: black;
+@backColorWte:  white;
